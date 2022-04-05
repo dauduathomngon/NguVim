@@ -74,6 +74,7 @@ git clone https://github.com/dauduathomngon/NguVim.git ~/.config/nvim
 
 - Được tối ưu 1 chút nhờ **_Lazy load_** cơ bản: 
 <img src="/img/1.gif">
+
 > Khởi động cùng với 44 Plugins trong 54.1 ms (Ở các lần sau sẽ nhanh hơn do được lưu cache) 
 
 > Lưu ý đây là benchmark trên máy mình nên nó sẽ khác nhau trễn mỗi mày, ngoài ra còn phụ thuộc vào hệ điều hành và terminal NeoVim sử dụng.
