@@ -1,6 +1,6 @@
 local ok, treesitter = pcall(require, "nvim-treesitter.configs")
 if not ok then
-  print("something wrong with tree sitter")
+  print("Đã có lỗi xảy ra với Treesitter, vui lòng check file treesitter.lua")
   return false
 end
 
@@ -17,7 +17,7 @@ treesitter.setup{
     extended_mode = true,
     max_file_lines = nil,
   },
-  -- matchup = {
-  --   enable = true,
-  -- },
+  matchup = {
+    enable = true,
+  },
 }

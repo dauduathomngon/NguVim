@@ -22,7 +22,8 @@ return require("packer").startup(function(use)
     use {"nvim-lua/plenary.nvim",
 	  event = "BufRead"
         }
-use ({"nvim-telescope/telescope.nvim",
+
+    use ({"nvim-telescope/telescope.nvim",
 	  cmd = "Telescope",
 	  config = function()
 	    require "plugins.tele_find"
@@ -134,7 +135,7 @@ use ({"nvim-telescope/telescope.nvim",
 
     use {"glepnir/dashboard-nvim",
 	  cmd = {
-	    "Dasboard",
+	    "Dashboard",
 	    "SessionLoad",
 	    "SessionSave",
 	  },

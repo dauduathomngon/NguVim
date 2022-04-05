@@ -1,7 +1,7 @@
 local ok, term = pcall(require, "toggleterm")
 
 if not ok then
-  print("Something wrong with ToggleTerm")
+  print("Đã có lỗi xảy ra với ToggleTerm, vui lòng check file term.lua")
   return false
 end
 

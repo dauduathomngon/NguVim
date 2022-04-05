@@ -1,7 +1,7 @@
 local ok, buffer = pcall(require, "bufferline")
 
 if not ok then
-  print("something wrong with bufferline")
+  print("Đã có lỗi xảy ra với Bufferline, vui lòng check file buffer.lua")
   return false
 end
 

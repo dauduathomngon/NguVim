@@ -28,10 +28,9 @@ vim.g.dashboard_custom_section = {
   a = {description = {'  Find File          '}, command = 'Telescope find_files'},
   d = {description = {'  Search Text        '}, command = 'Telescope live_grep'},
   b = {description = {'  Recent Files       '}, command = 'Telescope oldfiles'},
-  -- Ở dòng này là config trên Linux, ở Windows thì đổi thành khác.
-  e = {description = {'  Config             '}, command = 'edit ~/.config/nvim/'} 
 }
 
 vim.g.dashboard_custom_footer = {
   "Chào mừng các bạn đến với NguVim, có bug thì nhớ liên hệ với mình :<"
 }
+

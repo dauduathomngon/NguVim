@@ -1,7 +1,7 @@
 local ok, tree = pcall(require, "nvim-tree")
 
 if not ok then 
-  print("Something wrong with Nvim-tree")
+  print("Đã có lỗi xảy ra với nvim-tree, vui lòng check file nvimtree.lua")
   return false
 end
 

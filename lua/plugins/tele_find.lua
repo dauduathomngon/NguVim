@@ -1,7 +1,7 @@
 local ok, tele = pcall(require, "telescope")
 
 if not ok then
-  print("Something wrong with Telescope")
+  print("Đã có lỗi xảy ra với telescope, vui lòng check file tele_find.lua")
   return false
 end
   

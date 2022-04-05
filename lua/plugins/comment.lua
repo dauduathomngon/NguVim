@@ -1,7 +1,7 @@
 local ok, comment = pcall(require, 'nvim_comment')
 
 if not ok then
-  print("something wrong with nvim-comment")
+  print("Đã có lỗi xảy ra với nvim-comment, vui lòng check file comment.lua")
   return false
 end
 

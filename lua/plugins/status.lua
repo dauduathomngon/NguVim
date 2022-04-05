@@ -1,7 +1,7 @@
 local ok, lualine = pcall(require, "lualine")
 
 if not ok then
-  print("something wrong with lualine")
+  print("Đã có lỗi xảy ra với lualine, vui lòng check file status.lua")
   return false
 end
 
