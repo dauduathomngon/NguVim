@@ -87,6 +87,26 @@ git clone https://github.com/dauduathomngon/NguVim.git ~/.config/nvim
 
 <img src= "/img/2.gif">
 
+- Có thể quản lý file với **_Nvim-tree_**
+
+- Comment code nhanh hơn với **_nvim-comment_**
+
+- Tìm kiếm file, string, ... với **_Telescope_**.
+
+- Syntax highlight với **_Treesitter_**
+
+- Code gợi ý, check code với **_Nvim-lsp_** và **_nvim-cmp_**.
+
+- Thanh status và thanh chuyển qua lại giữa các tab với **_Lualine_** và **_Bufferline_**. 
+
+- Plugins hiện nhiệt độ, thời tiết hoom nay trên thanh status với **_weather.nvim_**.
+
+- Mở terminal ngay trong Neovim với **_ToggleTerm_**.
+
+- Hiện các function, tên biến, ... với **_Vista.vim_**.
+
+- Ngoài còn 1 vài Plugin có ích khác nữa.
+
 ## Tiến độ hiện tại: (70%)
 - [x] Các Plugins cơ bản 
 - [x] Lazy load cơ bản
