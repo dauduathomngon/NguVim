@@ -72,6 +72,20 @@ git clone https://github.com/dauduathomngon/NguVim.git ~/.config/nvim
 
 ## Các tính năng của NguVim.
 
+- Được tối ưu 1 chút nhờ **_Lazy load_** cơ bản: 
+<img src="/img/1.gif">
+> Khởi động cùng với 44 Plugins trong 54.1 ms (Ở các lần sau sẽ nhanh hơn do được lưu cache) 
+
+> Lưu ý đây là benchmark trên máy mình nên nó sẽ khác nhau trễn mỗi mày, ngoài ra còn phụ thuộc vào hệ điều hành và terminal NeoVim sử dụng.
+
+- Sử dụng **_theme Onedark_** khá là nổi tiếng.
+
+> Mình hiện tại đang tìm hiểu về cách install thêm nhiều theme và chuyển qua lại giữa các theme, nhưng với sự lười và hơi ngu của mình thì có thể nó sẽ xuất hiện về sau hoặc không bao giờ xuất hiện :<.
+
+> Ngoài ra theme này còn hỗ trợ đổi màu hehe.
+
+<img src= "/img/2.gif">
+
 ## Tiến độ hiện tại: (70%)
 - [x] Các Plugins cơ bản 
 - [x] Lazy load cơ bản
