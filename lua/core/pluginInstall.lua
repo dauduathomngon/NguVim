@@ -22,8 +22,7 @@ return require("packer").startup(function(use)
     use {"nvim-lua/plenary.nvim",
 	  event = "BufRead"
         }
-
-    use ({"nvim-telescope/telescope.nvim",
+use ({"nvim-telescope/telescope.nvim",
 	  cmd = "Telescope",
 	  config = function()
 	    require "plugins.tele_find"
@@ -63,13 +62,7 @@ return require("packer").startup(function(use)
     use {"norcalli/nvim-colorizer.lua",
 	  event = "BufRead",
 	  config = function()
-	    require'colorizer'.setup{
-	      'css';
-	      'javascript';
-	      html = {
-		mode = 'foreground';
-	      }
-	    }
+	    require'colorizer'.setup{}
 	  end
 	}
 
@@ -139,6 +132,17 @@ return require("packer").startup(function(use)
 	  end
 	}
 
+    use {"glepnir/dashboard-nvim",
+	  cmd = {
+	    "Dasboard",
+	    "SessionLoad",
+	    "SessionSave",
+	  },
+	  config = function()
+	    require "plugins.utils"
+	  end
+	}
+
     -- Quản lý file
     use { "kyazdani42/nvim-tree.lua",
 	  cmd = "NvimTreeToggle",
@@ -176,6 +180,21 @@ return require("packer").startup(function(use)
     use {"folke/todo-comments.nvim",
 	}
 
+    use {'phaazon/hop.nvim',
+	  cmd = {
+	    "HopWord",
+	    "HopLine",
+	    "HopChar1",
+	    "HopChar2",
+	    "HopPattern",
+	  },
+	  config = function()
+	    require'hop'.setup{
+
+	    }
+	  end
+	}
+
     -- LSP 
     use ({"hrsh7th/nvim-cmp",
 	  event = "InsertEnter",
@@ -196,7 +215,10 @@ return require("packer").startup(function(use)
 	    {'hrsh7th/cmp-buffer', after = "nvim-cmp"},
 	    {'hrsh7th/cmp-path', after = "nvim-cmp"},
 	    {'hrsh7th/cmp-cmdline', after = "nvim-cmp"},
-	    {'saadparwaiz1/cmp_luasnip', after = {"nvim-cmp", "LuaSnip"}}
+	    {'saadparwaiz1/cmp_luasnip', after = {"nvim-cmp", "LuaSnip"}},
+	    {"hrsh7th/cmp-calc", after = "nvim-cmp"},
+	    {"hrsh7th/cmp-nvim-lsp-signature-help", after = "nvim-cmp"},
+	    {"ray-x/cmp-treesitter", after = {"nvim-cmp", "nvim-treesitter"}},
 	  },
 	})
 
